@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{6ec59e69-8109-4a51-919b-ee14be345dde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sys\win">
+      <UniqueIdentifier>{b004c3f2-2486-468c-8320-9791308137bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sys">
+      <UniqueIdentifier>{55184353-db60-433b-a281-b65a1c32d016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{18ccab77-0823-48e8-9d5f-d3baf5dea698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\android">
+      <UniqueIdentifier>{5aa8f357-1a8e-413e-8ae1-cde794ad11be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cli.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\control_msg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device_msg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event_converter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file_handler.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fps_counter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\receiver.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\recorder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scrcpy.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\server.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tiny_xpm.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video_buffer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\net.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\str_util.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scrcpy-vs.cpp" />
+    <ClCompile Include="src\sys\win\net2.c">
+      <Filter>src\sys\win</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\win\command2.c">
+      <Filter>src\sys\win</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\getopt_long.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cli.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\controller.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\control_msg.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device_msg.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\events.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event_converter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\file_handler.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fps_counter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input_manager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\receiver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\recorder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scrcpy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\screen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\server.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tiny_xpm.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video_buffer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\buffer_util.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\cbuf.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\lock.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\log.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\net.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\queue.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\str_util.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\input.h">
+      <Filter>src\android</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\keycodes.h">
+      <Filter>src\android</Filter>
+    </ClInclude>
+    <ClInclude Include="unistd.h" />
+    <ClInclude Include="src\compat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\icon.xpm">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

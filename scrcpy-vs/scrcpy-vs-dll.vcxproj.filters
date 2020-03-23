@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{12607348-1f44-45fe-8116-e8df0d18794c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sys\win">
+      <UniqueIdentifier>{fdfd96dc-9331-42f7-8efb-9471ab2c8a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sys">
+      <UniqueIdentifier>{94c25d19-41fb-44bc-b73c-39cc489021ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{24a6eb36-6216-4b7a-9c42-167d5b058c6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\android">
+      <UniqueIdentifier>{a80bcc33-da04-402e-8c19-a8b05b9ba5f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cli.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\command.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\controller.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\control_msg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device_msg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\event_converter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\file_handler.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fps_counter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\receiver.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\recorder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scrcpy.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\screen.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\server.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tiny_xpm.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\video_buffer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\win\command2.c">
+      <Filter>src\sys\win</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sys\win\net2.c">
+      <Filter>src\sys\win</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\getopt_long.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\net.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\str_util.c">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scrcpy-vs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cli.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\command.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\compat.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\controller.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\control_msg.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\decoder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device_msg.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\events.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\event_converter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\file_handler.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fps_counter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input_manager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\receiver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\recorder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scrcpy.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\screen.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\server.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stream.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tiny_xpm.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\video_buffer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\buffer_util.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\cbuf.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\lock.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\log.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\net.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\queue.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\str_util.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\input.h">
+      <Filter>src\android</Filter>
+    </ClInclude>
+    <ClInclude Include="src\android\keycodes.h">
+      <Filter>src\android</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="unistd.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="scrcpy-vs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\icon.xpm">
+      <Filter>src</Filter>
+    </None>
+    <None Include="dll.def" />
+  </ItemGroup>
+</Project>
