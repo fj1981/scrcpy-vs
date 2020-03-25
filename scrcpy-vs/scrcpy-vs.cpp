@@ -10,21 +10,36 @@
 
 extern "C" int main1(int argc, char *argv[]);
 extern"C" void QuitProcess();
-FunVideoImageArrive funcVideoArrive = NULL;
+FunVideoImageArrive func_video_arrived = NULL;
+FunScrcpyLog func_log = NULL;
 
 extern "C" int video_arrive(byte* image_buff ,int buff_size) {
-  if (funcVideoArrive) {
-    funcVideoArrive(image_buff, buff_size);
+  if (func_video_arrived) {
+    func_video_arrived(image_buff, buff_size);
     return true;
   }
   return false;
 }
+
 extern "C" int window_need_show() {
-    return funcVideoArrive == NULL;
+    return func_video_arrived == NULL;
 }
 
+extern "C" int log_callback(int category, int priority, const char *message) {
+  if (func_log) {
+    func_log(category,priority,message);
+  }
+  return 1;
+}
+
+
+extern "C" int has_log_callback() {
+  return func_log != NULL;
+}
+
+
 HANDLE run_event= NULL;
-extern "C" __declspec(dllexport) int __stdcall RunScrcpy(int argc, char *argv[])
+SCRCPY_API int __stdcall RunScrcpy(int argc, char *argv[])
 {
   if (run_event) {
     return -1;
@@ -35,7 +50,7 @@ extern "C" __declspec(dllexport) int __stdcall RunScrcpy(int argc, char *argv[])
   return ret;
 }
 
-extern "C" __declspec(dllexport) void __stdcall CloseScrcpy(int wait_exit_time)
+SCRCPY_API void __stdcall CloseScrcpy(int wait_exit_time)
 {
   QuitProcess();
   if (run_event) {
@@ -46,9 +61,29 @@ extern "C" __declspec(dllexport) void __stdcall CloseScrcpy(int wait_exit_time)
   return;
 }
 
-extern "C" __declspec(dllexport) int __stdcall RegistVideoCB(FunVideoImageArrive func)
+SCRCPY_API int __stdcall RegistVideoCB(FunVideoImageArrive func)
 {
-  funcVideoArrive = func;
+  func_video_arrived = func;
   return 1;
 }
+
+
+SCRCPY_API int __stdcall RegistScrcpyLogCB(FunScrcpyLog func)
+{
+  func_log = func;
+  return 1;
+}
+
+
+SCRCPY_API int __stdcall SetADBFolderPath(char *adb_path, char *srv_path)
+{
+  if(adb_path && adb_path[0]){
+     _putenv_s("ADB", adb_path);
+  }
+  if (srv_path && srv_path[0]) {
+    _putenv_s("SCRCPY_SERVER_PATH", srv_path);
+  }
+  return 1;
+}
+
 

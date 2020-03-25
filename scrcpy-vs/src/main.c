@@ -32,6 +32,19 @@ int
 main(int argc, char **argv) {
   return main1(argc,argv);
 }
+
+int 
+log_callback(int category, int priority, const char *message);
+void 
+
+
+SDLCALL LogFunction(void *userdata, int category, SDL_LogPriority priority, const char *message) {
+  log_callback(category, priority, message);
+}
+
+int 
+has_log_callback();
+
 int
 main1(int argc, char **argv) {
 #ifdef __WINDOWS__
@@ -40,7 +53,9 @@ main1(int argc, char **argv) {
     setbuf(stdout, NULL);
     setbuf(stderr, NULL);
 #endif
-
+    if (has_log_callback()) {
+      SDL_LogSetOutputFunction(LogFunction, 0);
+    }
 #ifndef NDEBUG
     SDL_LogSetAllPriority(SDL_LOG_PRIORITY_DEBUG);
 #endif

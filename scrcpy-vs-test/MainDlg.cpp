@@ -13,6 +13,11 @@ int __stdcall FunVideoImageArrive1(byte* image_buff, int buff_size) {
   return 1;
 }
 
+int __stdcall FunScrcpyLog1(int category, int priority, const char *message) {
+
+  return 1;
+}
+
 void RunScrcpy1()
 {
   char* p[]= {
@@ -33,7 +38,7 @@ LRESULT CMainDlg::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam
 	HICON hIconSmall = AtlLoadIconImage(IDR_MAINFRAME, LR_DEFAULTCOLOR, ::GetSystemMetrics(SM_CXSMICON), ::GetSystemMetrics(SM_CYSMICON));
 	SetIcon(hIconSmall, FALSE);
   RegistVideoCB(FunVideoImageArrive1);
-
+  RegistScrcpyLogCB(FunScrcpyLog1);
   th_ = new std::thread(RunScrcpy1);
 
 	return TRUE;

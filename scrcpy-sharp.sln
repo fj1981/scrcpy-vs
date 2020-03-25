@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scrcpy-sharp", "scrcpy-sharp\scrcpy-sharp.csproj", "{9AA92D78-15C8-44EB-98B8-17EB874EF073}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scrcpy-sharp-test", "scrcpy-sharp-test\scrcpy-sharp-test.csproj", "{520E472B-AAD1-43D4-9C48-546C9CE6D378}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AA92D78-15C8-44EB-98B8-17EB874EF073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA92D78-15C8-44EB-98B8-17EB874EF073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA92D78-15C8-44EB-98B8-17EB874EF073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA92D78-15C8-44EB-98B8-17EB874EF073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520E472B-AAD1-43D4-9C48-546C9CE6D378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520E472B-AAD1-43D4-9C48-546C9CE6D378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520E472B-AAD1-43D4-9C48-546C9CE6D378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520E472B-AAD1-43D4-9C48-546C9CE6D378}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42076FFB-68C0-427F-BBAF-63B4F0E6947F}
+	EndGlobalSection
+EndGlobal
